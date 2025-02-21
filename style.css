@@ -545,8 +545,8 @@
    * #testimonials 
    */
   
- .testimonials { margin-bottom: 30px; }
-   
+  .testimonials { margin-bottom: 30px; }
+  
   .testimonials-title { margin-bottom: 20px; }
   
   .testimonials-list {
@@ -589,10 +589,10 @@
   }
   
   .testimonials-avatar-box {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
-    transform: none;
+    transform: translate(15px, -25px);
     background: var(--bg-gradient-onyx);
     border-radius: 14px;
     box-shadow: var(--shadow-1);
@@ -756,13 +756,13 @@
   .clients-item img {
     width: 100%;
     border-radius: 50%;
-/*   
-    filter: grayscale(1); 
-    transition: var(--transition-1);*/
+  
+    filter: grayscale(1);
+    transition: var(--transition-1);
   }
   
-/*   .clients-item img:hover { filter: grayscale(0); }
-   */
+  .clients-item img:hover { filter: grayscale(0); }
+  
   
   
   
