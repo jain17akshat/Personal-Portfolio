@@ -564,8 +564,8 @@ main {
 }
 .testimonials-avatar-box,
 .modal-avatar-box {
-  width: 90px;  /* Set fixed width */
-  height: 90px; /* Set fixed height */
+  width: 50px;  /* Set fixed width */
+  height: 60px; /* Set fixed height */
   border-radius: 50%; /* Makes the container circular */
   display: flex;
   justify-content: center;
@@ -577,9 +577,9 @@ main {
 
 .testimonials-avatar-box img,
 .modal-avatar-box img {
-  width: 100%; /* Fill the container */
-  height: 100%; /* Maintain the aspect ratio */
-  border-radius: 50%; /* Makes the image circular */
+  width: 200%; /* Fill the container */
+  height: 180%; /* Maintain the aspect ratio */
+  border-radius: 100%; /* Makes the image circular */
   object-fit: cover; /* Ensures the image fully covers the container */
 }
 
