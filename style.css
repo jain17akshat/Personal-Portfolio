@@ -756,13 +756,16 @@
   .clients-item img {
     width: 100%;
     border-radius: 50%;
-  
-    filter: grayscale(1);
+       transform: rotate(0deg);
     transition: var(--transition-1);
+  
+/*     filter: grayscale(1);
+    transition: var(--transition-1); */
   }
   
-  .clients-item img:hover { filter: grayscale(0); }
-  
+  .clients-item img:hover {
+    transform: rotate(10deg);
+}
   
   
   
