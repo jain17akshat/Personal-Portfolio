@@ -752,19 +752,23 @@
     min-width: 50%;
     scroll-snap-align: start;
   }
+  
   .clients-item img {
-    transform: rotate(0deg);
+    width: 100%;
+    border-radius: 50%;
+     transform: rotate(0deg);
     transition: var(--transition-1);
-}
-
   
 /*     filter: grayscale(1);
     transition: var(--transition-1); */
   }
-  
-  .clients-item img:hover {
+.clients-item img:hover {
     transform: rotate(10deg);
 }
+  
+/*   .clients-item img:hover { filter: grayscale(0); }
+   */
+  
   
   
   
