@@ -545,8 +545,8 @@
    * #testimonials 
    */
   
-  .testimonials { margin-bottom: 30px; }
-  
+ .testimonials { margin-bottom: 30px; }
+   
   .testimonials-title { margin-bottom: 20px; }
   
   .testimonials-list {
@@ -577,8 +577,8 @@
   
   .testimonials-avatar-box img,
   .modal-avatar-box img {
-    width: 60%; /* Fill the container */
-    height: 40%; /* Maintain the aspect ratio */
+    width: 100%; /* Fill the container */
+    height: 100%; /* Maintain the aspect ratio */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image fully covers the container */
   }
@@ -589,10 +589,10 @@
   }
   
   .testimonials-avatar-box {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    transform: translate(15px, -25px);
+    transform: none;
     background: var(--bg-gradient-onyx);
     border-radius: 14px;
     box-shadow: var(--shadow-1);
