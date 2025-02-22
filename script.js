@@ -305,39 +305,15 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // Sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
-// Testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// Modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// Modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
 // Prevent page scroll when clicking on client icons
-for (let i = 0; i < testimonialsItem.length; i++) {
-  let profilePhoto = testimonialsItem[i].querySelector("[data-testimonials-avatar]");
+const clientIcons = document.querySelectorAll("[data-testimonials-avatar]");
 
-  profilePhoto.addEventListener("click", function (event) {
+clientIcons.forEach(icon => {
+  icon.addEventListener("click", function (event) {
     event.preventDefault();  // Prevents the page from scrolling to the top
     event.stopPropagation(); // Stops click from affecting other elements
-
-    modalImg.src = this.src;
-    modalImg.alt = this.alt;
-    modalTitle.innerHTML = this.closest("[data-testimonials-item]").querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.closest("[data-testimonials-item]").querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
   });
-}
+});
 
 // Custom select variables
 const select = document.querySelector("[data-select]");
@@ -425,4 +401,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
   });
-}
+});
