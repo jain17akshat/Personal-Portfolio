@@ -322,13 +322,13 @@ const testimonialsModalFunc = function () {
   overlay.classList.toggle("active");
 }
 
-// Add click event to only the profile photo
+// Prevent page scroll when clicking on client icons
 for (let i = 0; i < testimonialsItem.length; i++) {
   let profilePhoto = testimonialsItem[i].querySelector("[data-testimonials-avatar]");
 
   profilePhoto.addEventListener("click", function (event) {
-    event.preventDefault();  // Prevents page from scrolling to top
-    event.stopPropagation(); // Stops event bubbling
+    event.preventDefault();  // Prevents the page from scrolling to the top
+    event.stopPropagation(); // Stops click from affecting other elements
 
     modalImg.src = this.src;
     modalImg.alt = this.alt;
@@ -338,10 +338,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     testimonialsModalFunc();
   });
 }
-
-// Add click event to modal close button and overlay
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
 
 // Custom select variables
 const select = document.querySelector("[data-select]");
@@ -414,7 +410,10 @@ const pages = document.querySelectorAll("[data-page]");
 
 // Add event to all nav links
 for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+  navigationLinks[i].addEventListener("click", function (event) {
+    event.preventDefault(); // Prevents unwanted scrolling
+    event.stopPropagation();
+
     for (let j = 0; j < pages.length; j++) {
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
         pages[j].classList.add("active");
