@@ -625,6 +625,16 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.testimonials-content {
+    flex-grow: 1; /* Allow the text area to expand */
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the text vertically */
+    height: 100%; /* Ensure it takes full height of the box */
+}
+
 
 
 /**
