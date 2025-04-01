@@ -598,7 +598,14 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title { margin-bottom: 7px;
+			 
+			
+    white-space: nowrap; /* Prevents line break */
+    overflow: hidden; /* Ensures the text doesn’t overflow */
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+
+}
 
 .testimonials-text {
   color: var(--light-gray);
