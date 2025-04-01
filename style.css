@@ -645,6 +645,8 @@ main {
   z-index: 20;
   pointer-events: none;
   visibility: hidden;
+	  left: 0;
+
 }
 
 .modal-container::-webkit-scrollbar { display: none; }
