@@ -614,7 +614,20 @@ main {
 
 }
 
+.testimonial-title {
+    font-weight: bold;
+    text-align: center; /* Center the name and company */
+    width: 100%; /* Ensure it spans the full width */
+}
+.testimonial-box {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 20px; /* Adjust as needed */
+}
+
 .testimonials-text {
+flex-grow: 1; /* Allow the text area to expand */
+text-align: center; /* Center the text horizontally */
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
