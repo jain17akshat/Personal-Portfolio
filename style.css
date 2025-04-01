@@ -594,8 +594,8 @@ main {
 
 .testimonials-avatar-box {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: auto;
+  left: auto;
   transform: translate(15px, -25px);
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
@@ -603,7 +603,8 @@ main {
 }
 
 .testimonials-item-title { margin-bottom: 7px;
-    font-size: 0.9em; /* Adjust based on your design */
+       text-align: left; /* Align text to the left */
+   font-size: 0.9em; /* Adjust based on your design */
     letter-spacing: 0.5px;			
     white-space: nowrap; /* Prevents line break */
    display: inline-block; /* Ensures it stays in one line */
