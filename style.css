@@ -600,6 +600,8 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+	    margin-bottom: 10px; /* Add spacing between avatar and text */
+
 }
 
 .testimonials-item-title { margin-bottom: 7px;
