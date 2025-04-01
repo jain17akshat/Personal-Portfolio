@@ -583,9 +583,13 @@ main {
   object-fit: cover; /* Ensures the image fully covers the container */
 }
 
-.testimonials-item {
+/* .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
+} */
+.testimonials-item {
+    width: auto; /* Prevents restricting the text */
+    max-width: 100%; /* Ensures responsiveness */
 }
 
 .testimonials-avatar-box {
@@ -602,8 +606,8 @@ main {
 			 
 			
     white-space: nowrap; /* Prevents line break */
-    overflow: hidden; /* Ensures the text doesn’t overflow */
-    text-overflow: ellipsis; /* Adds "..." if text is too long */
+   display: inline-block; /* Ensures it stays in one line */
+    text-align: center; /* Keeps alignment clean */
 
 }
 
