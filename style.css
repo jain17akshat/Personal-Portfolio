@@ -603,8 +603,8 @@ main {
 }
 
 .testimonials-item-title { margin-bottom: 7px;
-			 
-			
+    font-size: 0.9em; /* Adjust based on your design */
+    letter-spacing: 0.5px;			
     white-space: nowrap; /* Prevents line break */
    display: inline-block; /* Ensures it stays in one line */
     text-align: center; /* Keeps alignment clean */
