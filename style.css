@@ -547,7 +547,10 @@ main {
 
 .testimonials { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.testimonials-title { margin-bottom: 20px;
+   font-size: 0.9em; /* Adjust based on your design */
+    letter-spacing: 0.5px;
+		    }
 
 .testimonials-list {
   display: flex;
